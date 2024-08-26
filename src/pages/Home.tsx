@@ -1,10 +1,12 @@
 import React from "react";
 import ItemCard from "../components/ItemCard";
+import ImageCarousel from "../components/ImageCarousel";
 
 const Home: React.FC = () => {
   return (
     <div className="container">
-      <h1 className="my-4">Welcome to the Home Page</h1>
+      <h1 className="">Nav Bar</h1>
+      <ImageCarousel />
       <div className="row">
         <div className="col-md-4">
           <ItemCard
