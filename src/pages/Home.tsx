@@ -1,6 +1,7 @@
 import React from "react";
 import ItemCard from "../components/ItemCard";
 import ImageCarousel from "../components/ImageCarousel";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -63,6 +64,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
