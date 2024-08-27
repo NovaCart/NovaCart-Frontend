@@ -4,7 +4,7 @@ const images=["/images/design4.png","/images/image 2.jpg","/images/design2.png",
 
 const MasonaryGrid=() =>{
   return (
-    <div className='columns-1 sm:columns-2 lg:column-3 px-4 py-10 md:py-20 md:px-6 gap-4'>
+    <div className='columns-2 sm:columns-4 lg:column-4 px-4 py-10 md:py-20 md:px-6 gap-4'>
       {images.map((src,index)=>
       <div key={index} className='mb-4 break-inside-avoid'>
         <img src={src} className='w-full object-cover rounded-lg shadow-md' />
