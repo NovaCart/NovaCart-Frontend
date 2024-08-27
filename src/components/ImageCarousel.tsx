@@ -1,32 +1,47 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import Slider from "react-slick";
 
-function IndividualIntervalsExample() {
+// Define the type for your props if needed
+interface CarouselProps {}
+
+const Carousel: React.FC<CarouselProps> = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
   return (
-    <Carousel>
-      <Carousel.Item interval={1000} style={{ width: "100%", height: "650px" }}>
-        <img
-          src="/images/1.webp"
-          style={{ width: "100%", height: "650px", objectFit: "cover" }}
-        />
-        <Carousel.Caption></Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500} style={{ width: "100%", height: "650px" }}>
-        <img
-          src="/images/2.jpeg"
-          style={{ width: "100%", height: "650px", objectFit: "cover" }}
-        />
-        <Carousel.Caption></Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item style={{ width: "100%", height: "650px" }}>
-        <img
-          src="/images/home 3.webp"
-          style={{ width: "100%", height: "650px", objectFit: "cover" }}
-        />
-        <Carousel.Caption></Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div className="w-full h-[650px]">
+      <Slider {...settings}>
+        <div className="relative w-full h-full">
+          <img
+            src="/images/1.webp"
+            className="w-full h-full object-cover"
+            alt="Slide 1"
+          />
+        </div>
+        <div className="relative w-full h-full">
+          <img
+            src="/images/2.jpeg"
+            className="w-full h-full object-cover"
+            alt="Slide 2"
+          />
+        </div>
+        <div className="relative w-full h-full">
+          <img
+            src="/images/home 3.webp"
+            className="w-full h-full object-cover"
+            alt="Slide 3"
+          />
+        </div>
+      </Slider>
+    </div>
   );
-}
+};
 
-export default IndividualIntervalsExample;
+export default Carousel;

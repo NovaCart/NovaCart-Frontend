@@ -1,8 +1,11 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyButton() {
-  return <button className="btn btn-dark text-white fw-bold">Buy Now</button>;
+  return (
+    <button className="bg-gray-800 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 transition">
+      Buy Now
+    </button>
+  );
 }
 
 export default MyButton;

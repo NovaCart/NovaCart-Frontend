@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import BuyNowButton from "./BuyNowButton";
 
 interface ItemCardProps {
@@ -16,16 +15,14 @@ const ItemCard: React.FC<ItemCardProps> = ({
   price,
 }) => {
   return (
-    <div className="card" style={{ maxWidth: "300px", margin: "20px" }}>
-      <img src={imageUrl} alt={title} className="card-img-top" />
-      <div className="card-body">
-        <div className="d-flex justify-content-between align-items-center mb-2">
-          <h5 className="card-title">{title}</h5>
-          <img src="/images/react.png" alt="star" style={{ width: "20px" }} />
+    <div className="max-w-xs mx-4 my-6 bg-white shadow-md rounded-lg overflow-hidden">
+      <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+      <div className="p-4">
+        <div className="flex items-center justify-between mb-2">
+          <h5 className="text-lg font-semibold">{title}</h5>
+          <img src="/images/react.png" alt="star" className="w-5" />
         </div>
-        <p className="card-text">
-          <strong>${price}</strong>
-        </p>
+        <p className="text-xl font-bold mb-4">${price}</p>
         <BuyNowButton />
       </div>
     </div>
