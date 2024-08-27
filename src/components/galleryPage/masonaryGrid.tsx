@@ -7,7 +7,7 @@ const MasonaryGrid=() =>{
     <div className='columns-2 sm:columns-4 lg:column-4 px-4 py-10 md:py-20 md:px-6 gap-4'>
       {images.map((src,index)=>
       <div key={index} className='mb-4 break-inside-avoid'>
-        <img src={src} className='w-full object-cover rounded-lg shadow-md' />
+        <img src={src} className='w-full object-cover rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300' />
       </div>)}
     </div>
   )
