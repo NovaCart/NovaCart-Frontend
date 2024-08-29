@@ -2,7 +2,6 @@ import React from 'react'
 import { SquarePlus } from 'lucide-react';
 import { CircleArrowRight } from 'lucide-react';
 
-
 const loginUI = () => {
   return (
     <div className='w-full h-screen flex items-start'>
