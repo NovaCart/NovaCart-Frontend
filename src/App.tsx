@@ -6,6 +6,9 @@ import Gallery from "./pages/Gallery";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Women from "./pages/Women";
+import Men from "./pages/Men";
+import SignUp from "./pages/SignUp";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +17,9 @@ const App: React.FC = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/men" element={<Men/>} />
+        <Route path="/women" element={<Women/>} />
+        <Route path="signUp" element={<SignUp />} />
       </Routes>
     </Router>
   );

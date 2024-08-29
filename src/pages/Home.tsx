@@ -2,11 +2,12 @@ import React from "react";
 import ItemCard from "../components/ItemCard";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
+import HomeNavBar from "../components/HomeNavBar";
 
 const Home: React.FC = () => {
   return (
-    <div className="mx-auto px-4">
-      <h1 className="text-center text-2xl font-bold my-4">Nav Bar</h1>
+    <div className="mx-auto ">
+      <HomeNavBar/>
       <Carousel />
 
       <div className="mt-8 text-center">
