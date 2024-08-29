@@ -1,4 +1,7 @@
 import React from 'react'
+import { SquarePlus } from 'lucide-react';
+import { CircleArrowRight } from 'lucide-react';
+
 
 const loginUI = () => {
   return (
@@ -16,20 +19,33 @@ const loginUI = () => {
             <p className='flex justify-center  text-green-700'>NOVACART</p>
           </h1>
         </div>
-        <div className='absolute top-[65%] left-[16%] px-20 flex flex-col'>
-          <h6 className='text-md text-black items-center'>Check out faster with saved info</h6>
-          <h6 className='text-md text-black items-center'>Enjoy our personalized journey </h6>
-          <h6 className='text-md text-black items-center'>Keep your orders on track</h6>
-          <h6 className='text-md text-black items-center'>Get loyality discounts</h6>
-
+        <div>
+          <div className='absolute top-[65%] left-[12%] px-20 flex space-x-1'>
+            <h6 className='text-md text-black items-center'><SquarePlus /></h6>
+            <h6 className='text-md text-black items-center'>Check out faster with saved info</h6>
+          </div>
+          <div className='absolute top-[70%] left-[12%] px-20 flex space-x-1'>
+            <h6 className='text-md text-black items-center'><SquarePlus /></h6>
+            <h6 className='text-md text-black items-center'>Enjoy our personalized journe</h6>
+          </div>
+          <div className='absolute top-[75%] left-[12%] px-20 flex space-x-1'>
+            <h6 className='text-md text-black items-center'><SquarePlus /></h6>
+            <h6 className='text-md text-black items-center'>Keep your orders on track</h6>
+          </div>
+          <div className='absolute top-[80%] left-[12%] px-20 flex space-x-1'>
+            <h6 className='text-md text-black items-center'><SquarePlus /></h6>
+            <h6 className='text-md text-black items-center'>Get loyality discounts</h6>
+          </div>
         </div>
-        <div className='absolute top-[85%] left-[60%] px-20 flex flex-co'>
-        <h6 className='text-lg text-green-700 items-center font-bold'>Join with us Now</h6>
+        <div className='absolute top-[85%] left-[60%] px-20 flex space-x-2'>
+          <h6 className='flex text-lg text-green-700 items-center font-bold'>Join with us Now</h6>
+          <h6 className='flex text-lg text-green-700 items-center font-bold'><CircleArrowRight />
 
+          </h6>
         </div>
       </div>
-      </div>
-      )
+    </div>
+  )
 }
 
-      export default loginUI;
+export default loginUI;
