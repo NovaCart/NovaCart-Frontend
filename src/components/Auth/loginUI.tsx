@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SquarePlus } from 'lucide-react';
 import { CircleArrowRight } from 'lucide-react';
+import { Label } from '../ui/label';
+import { Input } from '../ui/input';
+import { Button } from '../ui/button';
+import LoginForm from './loginForm';
+import SignupForm from './signupForm';
 
-const loginUI = () => {
+const LoginUI: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isLogin, setIsLogin] = useState(true);
+
+  const toggle = () => {
+    setIsLogin(!isLogin);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Handle form submission
+  };
   return (
     <div className='w-full h-screen flex items-start'>
       <div className='relative bg-slate-200 w-3/5 h-full flex flex-col'>
@@ -12,7 +29,7 @@ const loginUI = () => {
             <p className='flex justify-center space-x-4'>account</p>
           </h1>
         </div>
-        <div className='absolute top-[15%] left-[20%] px-56 flex flex-col0'>
+        <div className='absolute top-[15%] left-[18%] px-56 flex flex-col0'>
           <h1 className='text-3xl text-black mt-40 items-center font-bold'> <p className='flex justify-center'>Welcome</p>
             <p className='flex justify-center'>to</p>
             <p className='flex justify-center  text-green-700'>NOVACART</p>
@@ -43,8 +60,41 @@ const loginUI = () => {
           </h6>
         </div>
       </div>
+      <div className='w-2/5 h-full flex flex-col p-10 '>
+
+
+        <div className="bg-white sm:pl-20 rounded-lg w-full max-w-md">
+          <div className="flex items-center justify-center">
+            <div className="flex w-64 h-12 bg-gray-200 rounded-full p-1">
+              <Button
+                onClick={() => setIsLogin(false)}
+                className={`flex-1 text-center font-semibold rounded-full ${!isLogin ? 'bg-black text-white' : 'bg-white text-black'
+                  } transition-all duration-300 ease-in-out`}
+              >
+                Sign Up
+              </Button>
+              <Button
+                onClick={() => setIsLogin(true)}
+                className={`flex-1 text-center font-semibold rounded-full ${isLogin ? 'bg-black text-white' : 'bg-white text-black'
+                  } transition-all duration-300 ease-in-out`}
+              >
+                Log In
+              </Button>
+            </div>
+           
+
+          </div>
+          <div className='grid' >
+              {isLogin ? <LoginForm /> : <SignupForm />}
+            </div>
+          
+        </div>
+      </div>
+
+
     </div>
   )
 }
 
-export default loginUI;
+
+export default LoginUI;
