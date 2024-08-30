@@ -1,31 +1,24 @@
 import React from "react";
 import HomeNavBar from "../components/HomeNavBar";
-import ItemCardHorizontal from "../components/ProfilePage/ItemCardHorizontal";
-import ContactCard from "../components/ProfilePage/ContactCard";
+import ContactCard from "../components/WishlistPage/ContactCard";
 import Footer from "../components/Footer";
-export default function Profile() {
+import ItemCardHistory from "../components/HistoryPage/ItemCardHistory";
+export default function History() {
   return (
     <div>
       <HomeNavBar />
       <div className="mx-auto px-4">
-        <h1 className="text-center text-2xl font-bold my-4">Nav Bar</h1>
-        <h1 className="text-left font-serif text-4xl my-4 ml-24">Wishlist</h1>
+        <h1 className="text-left font-serif text-4xl my-4 ml-24">Bought History</h1>
         <hr className="border-gray-300 border-t-2" />
         <div className="p-2">
           <div className="ml-16">
-            <ItemCardHorizontal
+          <ItemCardHistory
               title="White shirt "
               imageUrl="/images/1.jpg"
               price={29.99}
               description={" "}
             />
-            <ItemCardHorizontal
-              title="White shirt "
-              imageUrl="/images/1.jpg"
-              price={29.99}
-              description={" "}
-            />
-            <ItemCardHorizontal
+            <ItemCardHistory
               title="White shirt "
               imageUrl="/images/1.jpg"
               price={29.99}
@@ -40,7 +33,9 @@ export default function Profile() {
             />
           </div>
         </div>
+        <div className="mt-96">
         <Footer />
+        </div>
       </div>
     </div>
   );

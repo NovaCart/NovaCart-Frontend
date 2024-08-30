@@ -16,7 +16,7 @@ function HomeNavBar() {
 
   const dropDownMenu = [
     {path: '/wishlist', label: 'WishList', icon: <FiHeart className='mr-2'/>},
-    {path: '/manageprofile', label: 'Manage Profile', icon: <FiSettings className='mr-2'/>},
+    {path: '/settings', label: 'Manage Profile', icon: <FiSettings className='mr-2'/>},
     {path: '/history', label: 'History', icon: <FiList className='mr-2'/>},
   ]
 
