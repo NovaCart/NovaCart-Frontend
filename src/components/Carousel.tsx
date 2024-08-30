@@ -20,21 +20,21 @@ const Carousel: React.FC<CarouselProps> = () => {
         <div className="relative w-full h-[650px]">
           <img
             src="/images/1.webp"
-            className="w-full h-[650px] object-cover"
+            className="w-full h-full object-cover  object-top"
             alt="Slide 1"
           />
         </div>
         <div className="relative w-full h-[650px]">
           <img
             src="/images/2.jpeg"
-            className="w-full h-[650px] object-cover"
+            className="w-full h-full object-cover  object-top"
             alt="Slide 2"
           />
         </div>
         <div className="relative w-full h-[650px]">
           <img
             src="/images/home 3.webp"
-            className="w-full h-[650px] object-cover"
+            className="w-full h-full object-cover object-top"
             alt="Slide 3"
           />
         </div>
