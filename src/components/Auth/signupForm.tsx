@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
+import { set } from 'react-hook-form';
 
 const SignupForm : React.FC = () => {
   const [email, setEmail] = useState('');
@@ -11,6 +12,10 @@ const SignupForm : React.FC = () => {
         event.preventDefault();
         // Handle form submission
     };
+    function setValue(arg0: string, value: string): void {
+        throw new Error('Function not implemented.');
+    }
+
   return (
     <div>
        <form onSubmit={handleSubmit}>
@@ -22,7 +27,7 @@ const SignupForm : React.FC = () => {
                         value={email}
                         placeholder='       First name'
                         opacity-50
-                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue('name', e.target.value)}
                         className="w-full mt-2 p-2 border border-gray-300 rounded-full placeholder:opacity-50"
                         required
                     />
@@ -35,7 +40,7 @@ const SignupForm : React.FC = () => {
                         value={email}
                         placeholder='       Last name'
                         opacity-50
-                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue('name',e.target.value)}
                         className="w-full mt-2 p-2 border border-gray-300 rounded-full placeholder:opacity-50"
                         required
                     />
