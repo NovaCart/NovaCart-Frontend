@@ -15,7 +15,7 @@ const ItemCardHistory: React.FC<ItemCardHistoryProps> = ({
   price,
 }) => {
   return (
-    <div className="w-1/2 mx-2 my-6 bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="w-1/2 mx-2 my-6 bg-white shadow-md rounded-3xl overflow-hidden">
       <div className="max-w-s mx-2 grid grid-cols-2 gap-4">
         <div className="p-2">
           <img src={imageUrl} alt={title} className="h-48 object-cover" />
