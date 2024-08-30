@@ -5,7 +5,7 @@ interface CircularProgressProps {
   size?: number;
 }
 
-const CircularProgress: React.FC<CircularProgressProps> = ({
+const Circlefeedback: React.FC<CircularProgressProps> = ({
   percentage,
   size = 200,
 }) => {
@@ -19,7 +19,7 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
         cx={size / 2}
         cy={size / 2}
         r={radius}
-        stroke="#E6E6E6"
+        stroke="#426B1F"
         strokeWidth="10"
         fill="transparent"
         transform={`rotate(-90 ${size / 2} ${size / 2})`}
@@ -28,7 +28,7 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
         cx={size / 2}
         cy={size / 2}
         r={radius}
-        stroke="#06402b"
+        stroke="#6B1F1F"
         strokeWidth="10"
         fill="transparent"
         strokeDasharray={circumference}
@@ -49,4 +49,4 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
   );
 };
 
-export default CircularProgress;
+export default Circlefeedback;
