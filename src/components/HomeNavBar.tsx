@@ -23,12 +23,12 @@ function HomeNavBar() {
 
   const dropDownMenu = [
     {
-      path: "/WishList",
+      path: "/wishlist",
       label: "WishList",
       icon: <FiHeart className="mr-2" />,
     },
     {
-      path: "/manageprofile",
+      path: "/settings",
       label: "Manage Profile",
       icon: <FiSettings className="mr-2" />,
     },
