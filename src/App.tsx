@@ -7,6 +7,7 @@ import History from "./pages/History";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Admin from "./pages/Admin";
 import Women from "./pages/Women";
 import Men from "./pages/Men";
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
