@@ -12,9 +12,11 @@ import Women from "./pages/Women";
 import Men from "./pages/Men";
 import SignUp from "./pages/SignUp";
 import WishList from "./pages/WishList";
+import WishList from "./pages/WishList";
 import Settings from "./pages/Settings";
 import AdminUser from "./pages/AdminUser";
 import ReviewPage from "./pages/AdminReview";
+import Cart from "./pages/Cart";
 
 const App: React.FC = () => {
   return (
@@ -33,6 +35,7 @@ const App: React.FC = () => {
         <Route path="/adminuser" element={<AdminUser />} />
         <Route path="/adminreview" element={<ReviewPage />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );
