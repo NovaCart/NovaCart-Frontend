@@ -7,11 +7,14 @@ import History from "./pages/History";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Admin from "./pages/Admin";
 import Women from "./pages/Women";
 import Men from "./pages/Men";
 import SignUp from "./pages/SignUp";
-import WishList from "./pages/Wishlist";
+import WishList from "./pages/WishList";
 import Settings from "./pages/Settings";
+import AdminUser from "./pages/AdminUser";
+import ReviewPage from "./pages/AdminReview";
 
 const App: React.FC = () => {
   return (
@@ -19,12 +22,16 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery/>} />
-        <Route path="/men" element={<Men/>} />
-        <Route path="/women" element={<Women/>} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/history" element={<History />} />
         <Route path="/wishlist" element={<WishList />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/adminuser" element={<AdminUser />} />
+        <Route path="/adminreview" element={<ReviewPage />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>
