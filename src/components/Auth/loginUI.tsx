@@ -21,16 +21,16 @@ const LoginUI: React.FC = () => {
   return (
     <div className="w-full h-screen flex flex-col md:flex-row items-start">
       <div className="relative bg-slate-200 w-full md:w-3/5 h-full flex flex-col">
-        <div className="absolute top-[10%] left-[10%] md:left-[20%] flex flex-col">
-          <h1 className="text-xl md:text-3xl text-black space-y-2 space-x-4 px-10 md:px-40">
-            Make things easier
-            <p className="flex justify-center gap-2 md:gap-4">with an official</p>
-            <p className="flex justify-center space-x-2 md:space-x-4">account</p>
+        <div className="absolute top-[10%] left-[2%] md:left-[12%] flex flex-col">
+          <h1 className="text-xl md:text-4xl text-black space-y-2 space-x-4 ">
+            Make things easier with an official account
+            {/* <p className="flex justify-center gap-2 md:gap-4">with an official</p>
+            <p className="flex justify-center space-x-2 md:space-x-4">account</p> */}
           </h1>
         </div>
 
-        <div className="absolute top-[14%] left-[5%] md:left-[18%] px-4 md:px-56 flex flex-col">
-          <h1 className="text-xl md:text-3xl text-black mt-10 md:mt-40 items-center font-bold">
+        <div className="absolute top-[10%] left-[5%] md:left-[18%] px-4 md:px-56 flex flex-col">
+          <h1 className="text-xl md:text-4xl text-black mt-10 md:mt-40 items-center font-bold">
             <p className="flex justify-center">Welcome</p>
             <p className="flex justify-center">to</p>
             <p className="flex justify-center text-green-700">NOVACART</p>
