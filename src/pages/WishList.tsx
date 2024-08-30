@@ -40,7 +40,7 @@ export default function WishList() {
           </div>
         </div>
         <div className="mt-96">
-        <Footer />
+          <Footer />
         </div>
       </div>
     </div>
