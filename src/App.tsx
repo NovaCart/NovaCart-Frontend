@@ -10,8 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Women from "./pages/Women";
 import Men from "./pages/Men";
 import SignUp from "./pages/SignUp";
-import WishList from "./pages/Wishlist";
+import WishList from "./pages/WishList";
 import Settings from "./pages/Settings";
+import Cart from "./pages/Cart";
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <Route path="/history" element={<History />} />
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );

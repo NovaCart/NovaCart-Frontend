@@ -1,14 +1,14 @@
 import React from "react";
 import Delete from "../HistoryPage/DeleteButton";
 
-interface ItemCardProps {
+interface ItemCardHistoryProps {
   title: string;
   description: string;
   imageUrl: string;
   price: number;
 }
 
-const ItemCardHistory: React.FC<ItemCardProps> = ({
+const ItemCardHistory: React.FC<ItemCardHistoryProps> = ({
   title,
   description,
   imageUrl,
@@ -25,7 +25,7 @@ const ItemCardHistory: React.FC<ItemCardProps> = ({
         <div className="p-4">
           <div className="flex items-center justify-between mb-2">
             <h5 className="text-lg font-semibold">{title}</h5>
-            <h4 className="text-sm font-semibold text-gray-600">12-04-2023</h4>
+            <h4 className="text-sm font-semibold text-gray-400">12-04-2023</h4>
           </div>
           <p className="text-xl font-bold mb-12">${price}</p>
           <div className="flex items-end justify-end">

@@ -1,15 +1,14 @@
 import React from "react";
-import BuyNowButton from "../BuyNowButton";
-import { FaHeart } from 'react-icons/fa';
+import EditItem from "./EditItems";
 
-interface ItemCardHorizontalProps {
+interface ItemCardBoughtProps {
   title: string;
   description: string;
   imageUrl: string;
   price: number;
 }
 
-const ItemCardHorizontal: React.FC<ItemCardHorizontalProps> = ({
+const ItemCardBought: React.FC<ItemCardBoughtProps> = ({
   title,
   description,
   imageUrl,
@@ -26,12 +25,10 @@ const ItemCardHorizontal: React.FC<ItemCardHorizontalProps> = ({
         <div className="p-4">
           <div className="flex items-center justify-between mb-2">
             <h5 className="text-lg font-semibold">{title}</h5>
-            <button><FaHeart className="text-2xl text-red-500"/></button>
+            <h4 className="text-xl font-semibold text-gray-700">Rs. 1500</h4>
           </div>
-          <p className="text-xl font-bold mb-12">${price}</p>
-          <div className="flex items-end justify-end">
-          <BuyNowButton />
-          </div>
+          <p className="text-xl font-bold text-green-700 mb-12">${price}</p>
+          <EditItem />
           </div>
         </div>
       </div>
@@ -39,4 +36,4 @@ const ItemCardHorizontal: React.FC<ItemCardHorizontalProps> = ({
   );
 };
 
-export default ItemCardHorizontal;
+export default ItemCardBought;
