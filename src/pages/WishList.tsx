@@ -1,7 +1,7 @@
 import React from "react";
 import HomeNavBar from "../components/HomeNavBar";
-import ItemCardHorizontal from "../components/ProfilePage/ItemCardHorizontal";
-import ContactCard from "../components/ProfilePage/ContactCard";
+import ItemCardHorizontal from "../components/WishlistPage/ItemCardHorizontal";
+import ContactCard from "../components/WishlistPage/ContactCard";
 import Footer from "../components/Footer";
 export default function WishList() {
   return (
@@ -39,7 +39,9 @@ export default function WishList() {
             />
           </div>
         </div>
+        <div className="mt-96">
         <Footer />
+        </div>
       </div>
     </div>
   );
