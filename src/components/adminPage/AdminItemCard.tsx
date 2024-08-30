@@ -3,11 +3,11 @@ import React from "react";
 function AdminItemCard() {
   return (
     <div className="ms-24 w-[590px] flex flex-row rounded-lg bg-[#E6E6E6] shadow-md ">
-      <div className="w-1/4 h-auto">
+      <div className="w-1/4 h-36">
         <img
-          src="/images/1.jpg"
+          src="/images/design12.jpeg"
           alt="star"
-          className="w-auto h-36 overflow-hidden"
+          className="h-full w-full object-cover object-top lg:rounded-l-xl "
         />
       </div>
       <div className="w-1/2 ms-4 p-4 space-y-4">

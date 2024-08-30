@@ -1,19 +1,23 @@
 import React from "react";
+import AdminUserCard from "../components/adminPage/AdminUserCard";
+import HomeNavBar from "../components/HomeNavBar";
 
-function AdminHistory() {
+function AdminUser() {
   return (
     <div>
-      <div className="text-center text-2xl font-bold my-4">Admin Navbar</div>
+      <HomeNavBar />
       <div className="flex flex-row ">
         <div className="w-3/4">
           <div className="flex flex-row  space-x-96">
-            <div className="text-black text-5xl font-bold ms-12 ">Products</div>
+            <div className="text-black text-5xl font-light ms-12 mt-12 ">
+              users
+            </div>
           </div>
-
+          <div className="border-b-2 border-black mt-12 ms-12 me-12"></div>
           <div className="mt-12 space-y-8 ms-24">
-            {/* <AdminItemCard />
-            <AdminItemCard />
-            <AdminItemCard /> */}
+            <AdminUserCard />
+            <AdminUserCard />
+            <AdminUserCard />
           </div>
         </div>
         <div className="w-1/4">
@@ -32,4 +36,4 @@ function AdminHistory() {
   );
 }
 
-export default AdminHistory;
+export default AdminUser;

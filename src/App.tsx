@@ -12,6 +12,8 @@ import Women from "./pages/Women";
 import Men from "./pages/Men";
 import SignUp from "./pages/SignUp";
 import WishList from "./pages/WishList";
+import AdminUser from "./pages/AdminUser";
+import ReviewPage from "./pages/AdminReview";
 
 const App: React.FC = () => {
   return (
@@ -27,6 +29,8 @@ const App: React.FC = () => {
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/adminuser" element={<AdminUser />} />
+        <Route path="/adminreview" element={<ReviewPage />} />
       </Routes>
     </Router>
   );

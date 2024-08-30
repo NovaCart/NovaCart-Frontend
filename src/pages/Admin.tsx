@@ -1,21 +1,24 @@
 import React from "react";
 import ItemCard from "../components/ItemCard";
 import AddButton from "../components/AddButton";
-import AdminItemCard from "../components/AdminItemCard";
+import AdminItemCard from "../components/adminPage/AdminItemCard";
+import HomeNavBar from "../components/HomeNavBar";
 
 function Admin() {
   return (
     <div>
-      <div className="text-center text-2xl font-bold my-4">Admin Navbar</div>
+      <HomeNavBar />
       <div className="flex flex-row ">
         <div className="w-3/4">
           <div className="flex flex-row  space-x-96">
-            <div className="text-black text-5xl font-bold ms-12 ">Products</div>
-            <div className="mt-2 ">
+            <div className="text-black text-5xl font-light ms-12 mt-12 ">
+              Products
+            </div>
+            <div className="mt-16 ">
               <AddButton />
             </div>
           </div>
-
+          <div className="border-b-2 border-black mt-12 ms-12 me-12"></div>
           <div className="mt-12 space-y-8 ms-24">
             <AdminItemCard />
             <AdminItemCard />
