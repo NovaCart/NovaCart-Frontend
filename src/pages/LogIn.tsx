@@ -1,9 +1,11 @@
 import React from 'react'
-import LoginUI from '../components/Auth/loginUI'
+// import LoginUI from '../components/Auth/loginUI'
 
 const LogIn = () => {
   return (
-    <div><LoginUI/></div>
+    <div>
+      {/* <LoginUI/> */}
+      </div>
   )
 }
 
