@@ -1,19 +1,19 @@
 import React from "react";
 
 const images = [
-  "/images/design4.png",
+  "/images/design4.jpg",
   "/images/image 2.jpg",
-  "/images/design2.png",
-  "/images/design3.png",
-  "/images/design5.png",
-  "/images/design6.png",
-  "/images/design7.jpeg",
-  "/images/design8.jpeg",
-  "/images/design9.jpeg",
+  "/images/design2.jpg",
+  "/images/design3.jpg",
+  "/images/design5.jpg",
+  "/images/design6.jpg",
+  "/images/design7.jpg",
+  "/images/design8.jpg",
+  "/images/design9.jpg",
   "/images/design10.jpeg",
-  "/images/design11.jpeg",
-  "/images/design12.jpeg",
-  "/images/design13.jpeg",
+  "/images/design11.jpg",
+  "/images/design12.jpg",
+  "/images/design13.jpg",
 ];
 
 const MasonaryGrid = () => {
