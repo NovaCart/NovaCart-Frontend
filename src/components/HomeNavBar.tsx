@@ -36,9 +36,12 @@ function HomeNavBar() {
   ];
 
   return (
-    <div className="flex justify-between items-center bg-gray-950 py-5 md:pl-24 pl-1">
+    <div className="flex justify-between items-center bg-black py-5 md:pl-24 pl-1">
       <div className="text-green-800 font-thin font-serif md:text-5xl text-3xl pl-24">
-        <Link to="/home">NovaCart</Link>
+        <div className="flex flex-row">
+          <img src="/images/logo1.png" className="w-12 h-12" />
+          <Link to="/home">NovaCart</Link>
+        </div>
       </div>
 
       <div className="md:hidden pr-6">

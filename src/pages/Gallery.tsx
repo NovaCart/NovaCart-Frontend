@@ -1,5 +1,5 @@
 import React from "react";
-// import MasonaryGrid from './../components/galleryPage/masonaryGrid'
+import MasonaryGrid from "../components/galleryPage/MansonaryGrid";
 import Footer from "../components/Footer";
 import HomeNavBar from "../components/HomeNavBar";
 
@@ -7,7 +7,7 @@ function Gallery() {
   return (
     <div>
       <HomeNavBar />
-      {/* <MasonaryGrid/>   */}
+      <MasonaryGrid />
       <Footer />
     </div>
   );
