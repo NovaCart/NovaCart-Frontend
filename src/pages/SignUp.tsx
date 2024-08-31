@@ -1,12 +1,11 @@
-import React from 'react'
-import HomeNavBar from '../components/HomeNavBar'
-import LoginUI from '../components/Auth/loginUI'
+import React from "react";
+import HomeNavBar from "../components/HomeNavBar";
+import LoginUI from "../components/Auth/loginUI";
 
 export default function SignUp() {
   return (
     <div>
-        <HomeNavBar/>
-        <LoginUI/>
+      <LoginUI />
     </div>
-  )
+  );
 }
