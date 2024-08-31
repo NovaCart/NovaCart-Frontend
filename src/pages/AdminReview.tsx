@@ -19,7 +19,7 @@ const ReviewPage = () => {
           </div>
         )}
       </div>
-      {/* Tab Navigation */}
+
       <div className="flex space-x-4 mt-4 justify-center">
         <button
           className={`px-4 py-2 rounded ${
@@ -42,8 +42,6 @@ const ReviewPage = () => {
           Feedback
         </button>
       </div>
-
-      {/* Tab Content */}
     </div>
   );
 };
