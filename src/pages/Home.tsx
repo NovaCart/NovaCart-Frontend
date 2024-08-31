@@ -3,12 +3,19 @@ import ItemCard from "../components/ItemCard";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import HomeNavBar from "../components/HomeNavBar";
-
+import SearchBar from "../components/searchBar";
 const Home: React.FC = () => {
   return (
     <div className="mx-auto ">
-      <HomeNavBar/>
-      <Carousel />
+      <HomeNavBar />
+      <div className="relative">
+        <div className="relative">
+          <Carousel />
+        </div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-4 z-10">
+          <SearchBar />
+        </div>
+      </div>
 
       <div className="mt-8 text-center">
         <p className="text-4xl font-bold">Our New Arrivals</p>
