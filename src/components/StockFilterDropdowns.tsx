@@ -16,7 +16,7 @@ const StockFilterDropdown: React.FC<{
         </label>
         <select 
          id={id}
-         className="block bg-white focus:border-green-600 sm:text-sm md:w-28 w-20"
+         className="block bg-white border border-gray-50 focus:border-gray-600 focus:border-2 sm:text-sm md:w-28 w-20"
          value={selectedValue}
          onChange={onChange}
          >
