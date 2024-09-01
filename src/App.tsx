@@ -12,7 +12,6 @@ import Women from "./pages/Women";
 import Men from "./pages/Men";
 import SignUp from "./pages/SignUp";
 import WishList from "./pages/WishList";
-import WishList from "./pages/WishList";
 import Settings from "./pages/Settings";
 import AdminUser from "./pages/AdminUser";
 import ReviewPage from "./pages/AdminReview";
