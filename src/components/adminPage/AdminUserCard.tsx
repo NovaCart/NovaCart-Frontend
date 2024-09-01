@@ -5,7 +5,7 @@ function AdminUserCard() {
     <div className="ms-24 w-[820px] flex flex-row rounded-lg bg-[#E6E6E6] shadow-md ">
       <div className="w-1/6 h-36">
         <img
-          src="/images/design12.jpeg"
+          src="/images/chamodi.jpg"
           alt="star"
           className="h-full w-full object-cover object-top lg:rounded-l-xl "
         />

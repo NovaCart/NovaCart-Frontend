@@ -24,7 +24,7 @@ const ReviewPage = () => {
         <button
           className={`px-4 py-2 rounded ${
             activeTab === "revenue"
-              ? "bg-green-600 text-white"
+              ? "bg-gray-800 text-white"
               : "bg-gray-200 text-gray-800"
           }`}
           onClick={() => setActiveTab("revenue")}
@@ -34,7 +34,7 @@ const ReviewPage = () => {
         <button
           className={`px-4 py-2 rounded ${
             activeTab === "feedback"
-              ? "bg-green-600 text-white"
+              ? "bg-gray-800 text-white"
               : "bg-gray-200 text-gray-800"
           }`}
           onClick={() => setActiveTab("feedback")}
