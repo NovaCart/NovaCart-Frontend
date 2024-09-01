@@ -17,6 +17,7 @@ import Settings from "./pages/Settings";
 import AdminUser from "./pages/AdminUser";
 import ReviewPage from "./pages/AdminReview";
 import Cart from "./pages/Cart";
+import Blog from "./pages/Blog";
 
 const App: React.FC = () => {
   return (
@@ -37,6 +38,7 @@ const App: React.FC = () => {
         <Route path="/adminreview" element={<ReviewPage />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );
