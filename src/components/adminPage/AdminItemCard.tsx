@@ -5,7 +5,7 @@ function AdminItemCard() {
     <div className="ms-24 w-[590px] flex flex-row rounded-lg bg-[#E6E6E6] shadow-md ">
       <div className="w-1/4 h-36">
         <img
-          src="/images/design12.jpeg"
+          src="/images/design12.jpg"
           alt="star"
           className="h-full w-full object-cover object-top lg:rounded-l-xl "
         />
