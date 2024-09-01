@@ -1,9 +1,9 @@
 import React from "react";
 import HomeNavBar from "../components/HomeNavBar";
 import Footer from "../components/Footer";
-import ContactCard from "../components/WishlistPage/ContactCard";
+import ContactCard from "../components/ContactCard";
 import FormInput from "../components/SettingsPage/FormInput";
-import EditSaveButton from "../components/SettingsPage/Save&EditButton";
+import Button from "../components/Button";
 
 export default function Settings() {
   return (
@@ -35,7 +35,7 @@ export default function Settings() {
               onChange={(e) => console.log(e.target.value)}
             />
             <div>
-              <EditSaveButton/>
+              <Button/>
             </div>
           </div>
           <div className="absolute top-48 right-32 p-4">

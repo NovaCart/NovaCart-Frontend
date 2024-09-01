@@ -1,7 +1,7 @@
 import React from "react";
 import HomeNavBar from "../components/HomeNavBar";
 import Footer from "../components/Footer";
-import MyButton from "../components/BlogPage/Button";
+import Button from "../components/Button";
 import Gallery from "../components/BlogPage/BlogGallery";
 
 export default function Blog() {
@@ -28,9 +28,9 @@ export default function Blog() {
               </span>
             </h5>
             <div className="flex items-end justify-between ml-[600px] mr-16">
-              <MyButton />
+              <Button />
               <div className="ml-4">
-                <MyButton
+                <Button
                   bgColor="white"
                   textColor="text-black"
                   text="Add to wishlist"

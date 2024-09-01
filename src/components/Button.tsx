@@ -7,7 +7,7 @@ interface MyButtonProps {
   onClick?: () => void;
 }
 
-const MyButton: React.FC<MyButtonProps> = ({
+const Button: React.FC<MyButtonProps> = ({
   bgColor = "bg-black",
   textColor = "text-white",
   text = "Buy Now",
@@ -15,7 +15,7 @@ const MyButton: React.FC<MyButtonProps> = ({
 }) => {
   return (
     <button
-      className={`${bgColor} ${textColor} font-bold py-2 px-4 rounded-3xl border-[2px]`}
+      className={`${bgColor} ${textColor} font-bold py-2 px-4 rounded-2xl border-[2px]`}
       onClick={onClick}
     >
       {text}
@@ -23,4 +23,4 @@ const MyButton: React.FC<MyButtonProps> = ({
   );
 }
 
-export default MyButton;
+export default Button;

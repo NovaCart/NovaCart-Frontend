@@ -1,7 +1,7 @@
 import React from "react";
 import HomeNavBar from "../components/HomeNavBar";
 import ItemCardHorizontal from "../components/WishlistPage/ItemCardHorizontal";
-import ContactCard from "../components/WishlistPage/ContactCard";
+import ContactCard from "../components/ContactCard";
 import Footer from "../components/Footer";
 export default function WishList() {
   return (
