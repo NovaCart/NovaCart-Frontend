@@ -2,10 +2,9 @@ import React from "react";
 import HomeNavBar from "../components/HomeNavBar";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
-import ItemCard from "../components/ItemCard";
 import ItemCatalog from "../components/ItemCatalog";
-
-export default function Men() {
+import ItemCard from "../components/ItemCard";
+export default function Women() {
   return (
     <div>
       <HomeNavBar />
