@@ -8,12 +8,7 @@ interface ItemCardProps {
   price: number;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({
-  title,
-  description,
-  imageUrl,
-  price,
-}) => {
+const ItemCard: React.FC<ItemCardProps> = ({ title, imageUrl, price }) => {
   return (
     <div className="max-w-xs mx-4 my-6 bg-white shadow-md rounded-lg overflow-hidden">
       <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
