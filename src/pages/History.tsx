@@ -7,14 +7,14 @@ export default function History() {
   return (
     <div>
       <HomeNavBar />
-      <div className="mx-auto px-4 flex flex-row">
-        <div className="w-3/4">
-          <h1 className="text-left font-serif text-4xl my-8 ml-36">
+      <div className="mx-auto px-4 flex flex-col lg:flex-row">
+        <div className="w-full lg:w-3/4">
+          <h1 className="text-left font-serif text-4xl my-8 lg:ml-36">
             Bought History
           </h1>
-          <div className="border-b-2 border-black mt-12 ms-12 me-12"></div>
+          <div className="border-b-2 border-black mt-12 mx-4 lg:ms-12 lg:me-12"></div>
           <div className="p-2">
-            <div className="ml-16">
+            <div className="ml-4 lg:ml-16">
               <ItemCardHistory
                 title="White shirt "
                 imageUrl="/images/1.jpg"
@@ -30,7 +30,7 @@ export default function History() {
             </div>
           </div>
         </div>
-        <div className="w-1/4">
+        <div className="w-full lg:w-1/4 mt-8 lg:mt-0">
             <ContactCard
               imageUrl="/images/home 2.webp"
               name="Hasitha Prasadini"

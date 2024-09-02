@@ -8,15 +8,15 @@ interface ContactCardProps {
 
 const ContactCard: React.FC<ContactCardProps> = ({ imageUrl, name, email }) => {
   return (
-    <div className="max-w-sm me-36">
+    <div className="max-w-sm mx-auto lg:me-36">
       <div className="items-center flex flex-col">
         <img
           src={imageUrl}
           alt="Profile"
-          className="w-48 h-48 mt-8 rounded-full object-cover"
+          className="w-32 h-32 sm:w-48 sm:h-48 mt-8 rounded-full object-cover"
         />
-        <p className="text-md text-black-500">{name}</p>
-        <p className="text-md text-black-500">{email}</p>
+        <p className="text-sm sm:text-md text-black-500 mt-4">{name}</p>
+        <p className="text-sm sm:text-md text-black-500">{email}</p>
       </div>
     </div>
   );
