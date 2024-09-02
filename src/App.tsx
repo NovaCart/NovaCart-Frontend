@@ -20,6 +20,7 @@ import Cart from "./pages/Cart";
 // import LogIn from "./pages/LogIn";
 import Search from "./pages/Search";
 import Payment from "./pages/Payment";
+import Blog from "./pages/Blog";
 const App: React.FC = () => {
   return (
     <Router>
@@ -41,6 +42,7 @@ const App: React.FC = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/search" element={<Search />} />
         <Route path='/payment' element={<Payment />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );

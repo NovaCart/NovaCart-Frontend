@@ -6,7 +6,6 @@ import HomeNavBar from "../components/HomeNavBar";
 import SearchBar from "../components/searchBar";
 
 const Home: React.FC = () => {
-  // Sample data - Replace this with your actual data
   const items = [
     {
       title: "White shirt",
@@ -117,7 +116,7 @@ const Home: React.FC = () => {
             onClick={() => paginate(index + 1)}
             className={`mx-2 px-4 py-2 rounded mb-8 ${
               currentPage === index + 1
-                ? "bg-[#426B1F] text-white"
+                ? "bg-gray-800 text-white"
                 : "bg-gray-200 text-black"
             }`}
           >
