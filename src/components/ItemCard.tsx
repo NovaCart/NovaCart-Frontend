@@ -15,7 +15,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
   price,
 }) => {
   return (
-    <div className="max-w-xs mx-4 my-6 bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="max-w-xs mx-4 my-6 bg-white shadow-md rounded overflow-hidden">
       <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <div className="flex items-center justify-between mb-2">
