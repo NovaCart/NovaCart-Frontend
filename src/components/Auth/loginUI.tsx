@@ -128,18 +128,18 @@ const LoginUI: React.FC = () => {
     <div className="w-full h-screen flex flex-col sm:flex-row items-center">
       {/* Left Side */}
       <div className="relative bg-slate-200 w-full sm:w-3/5 h-auto sm:h-full flex flex-col p-6 sm:p-0 justify-center">
-        <div className="flex flex-col text-center lg:text-left sm:pl-[10%] sm:pr-[5%] sm:pt-[5%] sm:pb-[8%]">
+        <div className="flex flex-col text-center lg:text-left sm:pl-[10%] sm:pr-[5%] sm:pt-[2%] sm:pb-[8%]">
           <h1 className="text-xl sm:text-3xl text-black font-bold mb-4 sm:flex sm:justify-center">
             Make things easier with an official account
           </h1>
-          <h1 className="text-2xl sm:text-4xl text-black font-bold mt-8 sm:mt-12 sm:grid sm:justify-center">
+          <h1 className="text-2xl sm:text-4xl text-black font-bold mt-8 sm:mt-20 sm:grid sm:justify-center">
             <p className='sm:flex sm:justify-center'>Welcome </p>
             <p className='sm:flex sm:justify-center'> to</p>
             <p className="text-green-700 sm:flex sm:justify-center">NOVACART</p>
           </h1>
 
           {/* Feature List */}
-          <div className="mt-10 sm:mt-20 ml-10 sm:ml-64">
+          <div className="mt-10 sm:mt-20 ml-10 sm:ml-24 xl:ml-48">
             <div className="flex items-center space-x-2 mt-4">
               <SquarePlus className="text-black" />
               <h6 className="text-black">Check out faster with saved info</h6>
