@@ -15,13 +15,13 @@ export default function Settings() {
   return (
     <div>
       <HomeNavBar />
-      <div className="mx-auto px-4 flex flex-row">
-        <div className="w-3/4">
-          <h1 className="text-left font-serif text-4xl my-8 ml-36">Settings</h1>
+      <div className="mx-auto px-4 flex flex-col lg:flex-row">
+        <div className="w-full lg:w-3/4">
+          <h1 className="text-left font-serif text-4xl my-8 lg:ml-36">Settings</h1>
           <div className="border-b-2 border-black mt-12 ms-12 me-12"></div>
           <form>
             <div className="p-2">
-              <div className="w-2/3 ml-36 mt-8">
+              <div className="w-full lg:w-2/3 lg:ml-36 mt-8">
                 <FormInput
                   type="text"
                   label="First Name"
@@ -51,7 +51,7 @@ export default function Settings() {
                   onChange={(e) => console.log(e.target.value)}
                 />
               </div>
-              <div className=" ml-36 w-2/3">
+              <div className="lg:ml-36 w-full lg:w-2/3">
                 <div className="flex items-center">
                   <input
                     id="shipping-checkbox"
@@ -99,14 +99,14 @@ export default function Settings() {
                         />
                   </div>
                 )}
-                <div className="ml-[650px]">
+                <div className="lg:ml-[650px] ml-36 mt-4 lg:mt-0">
                   <Button text="Edit" />
                 </div>
               </div>
             </div>
           </form>
         </div>
-        <div className="w-1/4">
+        <div className="w-full lg:w-1/4 mt-8 lg:mt-0">
           <ContactCard
             imageUrl="/images/home 2.webp"
             name="Hasitha"
