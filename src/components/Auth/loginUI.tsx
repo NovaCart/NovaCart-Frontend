@@ -158,7 +158,6 @@ const LoginUI: React.FC = () => {
             </div>
           </div>
 
-          {/* Join CTA */}
           <div className="flex justify-center sm:justify-end items-center mt-8 sm:mt-16 space-x-2">
             <h6 className="text-green-700 font-bold">Join with us Now</h6>
             <CircleArrowRight className="text-green-700" />
@@ -166,10 +165,8 @@ const LoginUI: React.FC = () => {
         </div>
       </div>
 
-      {/* Right Side (Login/Signup) */}
       <div className="w-full lg:w-2/5 h-auto flex flex-col p-10 bg-white">
         <div className="bg-white rounded-lg w-full max-w-md mx-auto">
-          {/* Toggle Buttons */}
           <div className="flex items-center justify-center mb-6">
             <div className="flex w-64 h-12 bg-gray-200 rounded-full p-1">
               <Button
