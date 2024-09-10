@@ -10,7 +10,6 @@ const LoginForm: React.FC = () => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        // Handle form submission
     };
     return (
         <div>
