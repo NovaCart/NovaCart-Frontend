@@ -138,7 +138,6 @@ const LoginUI: React.FC = () => {
             <p className="text-green-700 sm:flex sm:justify-center">NOVACART</p>
           </h1>
 
-          {/* Feature List */}
           <div className="mt-10 sm:mt-20 ml-10 sm:ml-24 xl:ml-48">
             <div className="flex items-center space-x-2 mt-4">
               <SquarePlus className="text-black" />
@@ -184,19 +183,16 @@ const LoginUI: React.FC = () => {
             </div>
           </div>
 
-          {/* Login/Signup Forms */}
           <div>
             {isLogin ? <LoginForm /> : <SignupForm />}
           </div>
 
-          {/* OR Separator */}
           <div className="flex items-center justify-center my-4">
             <div className="border-t border-gray-600 flex-grow mr-3"></div>
             <span className="text-gray-500">OR</span>
             <div className="border-t border-gray-600 flex-grow ml-3"></div>
           </div>
 
-          {/* Social Login Buttons */}
           <div className="flex flex-col items-center gap-4 mb-4">
             <button className="flex items-center justify-center w-full max-w-xs bg-white border border-gray-300 rounded-full py-2 px-4 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition">
               <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google Logo" className="w-5 h-5 mr-2" />
@@ -208,7 +204,6 @@ const LoginUI: React.FC = () => {
             </button>
           </div>
 
-          {/* Terms & Conditions */}
           <p className="text-xs text-gray-500 text-center">
             By continuing you agree to create or log in to an account under NovaCart Terms of Use and Privacy Policy and Bolt’s Terms of Use and Privacy Policy.
           </p>
